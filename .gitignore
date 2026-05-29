@@ -26,6 +26,22 @@
 *.tra
 *.i
 
+# More Keil / toolchain generated artifacts
+*.ewp
+*.ewd
+*.icf
+*.sct
+*.iex
+*.crf
+
+# Ignore per-project generated folders (anywhere in the tree)
+**/rvmdk/
+**/RTE/
+
+# Misc toolchain/IDE artifacts
+*.scvd
+*.tirex.json
+
 # CMake/Ninja build folders and cache
 build/
 cmake-build-*/

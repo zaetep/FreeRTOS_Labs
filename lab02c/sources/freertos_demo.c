@@ -213,6 +213,8 @@ int main(void) {
                        SYSCTL_OSC_MAIN);
 	g_ui32SysClock = SysCtlClockGet();
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
     xLEDQueue  = xQueueCreate(1, sizeof(uint32_t));
     xUARTQueue = xQueueCreate(1, MAX_STRING_LEN);
     xPWMEvent  = xEventGroupCreate();
@@ -238,3 +240,5 @@ int main(void) {
 
     for ( ;; );
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //

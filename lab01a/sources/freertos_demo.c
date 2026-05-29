@@ -236,6 +236,8 @@ ConfigureUART(void) {
     UARTStdioConfig(0, 115200, SysCtlClockGet());
 } 
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
 // SysTick Handler 
 void SysTickIntHandler(void) {
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 
@@ -338,6 +340,8 @@ void Case3_PWM(int32_t g_ui32SysClock) {
     PWMGenEnable(PWM1_BASE, PWM_GEN_3);
 }
 
+// --- END SECTION COMPLETED BY STUDENT --- //
+
 #define INT_SysTick 15 
 uint32_t g_ui32SysClock; 
 //*****************************************************************************
@@ -390,7 +394,6 @@ main(void)
 	// HWREG(GPIO_PORTF_BASE + GPIO_O_CR) |= 0x0E; 			 //PF1, PF2, PF3 
 	// HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
 	
-	
 	ST7735_InitR(INITR_REDTAB);
 	DelayWait10ms(100);
 
@@ -403,34 +406,22 @@ main(void)
 	ST7735_Message(1, 4, "8line  4", 8);
 	ST7735_Message(1, 5, "line  5", 8);
 	
-    // This RTOS task creation does it all for us! KD
-    // Comment out the task initalization and scheduler initialization to test other functionality.
-
 	// Below are the FreeRTOS part partial start up process 	
 	
-    
-    // Create the LED task.
-    //
-    if(LEDTaskInit() != 0)
-    {
-        while(1)
-        {
-        }
-    }
-    //
-    // Start the scheduler.  This should not return.
-    //
-    vTaskStartScheduler();
-    
-	
-    // All of this (below) is incredibly pointless given the LED task.
-    // We don't need to touch SysTick, Timers, or PWM to blink the LED.
-    // Also, we already did this in ECE362. Why do it again?
-    // We should be learning about how freeRTOS handles the task for us.
-    // Or, even, better, how to code the task!
-    // Instead, we're just redoing the bare metal programming.
-    // Why run an OS if we're going to do this?
-    // /rant - Kaden Downes 9/24/2025
+    // // Create the LED task.
+    // //
+    // if(LEDTaskInit() != 0)
+    // {
+    //     while(1)
+    //     {
+    //     }
+    // }
+    // //
+    // // Start the scheduler.  This should not return.
+    // //
+    // vTaskStartScheduler();
+
+// --- SECTION COMPLETED BY STUDENT --- // 
 
     // logic to choose and run a case KD
     char ch = ' ';
@@ -461,6 +452,8 @@ main(void)
     while (1) { 
     }
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //
 
 // Subroutine to wait 10 msec
 // Inputs: None

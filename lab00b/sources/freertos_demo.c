@@ -208,7 +208,9 @@ uint8_t CommandLineProcess(uint8_t * pcCmdLine, uint8_t * pui8Argc, uint8_t * g_
     while ( * pcCmdLine == ' ') {
         pcCmdLine++;
     }
-	//It's your turn here
+
+// --- SECTION COMPLETED BY STUDENT --- //
+
     while (*pcCmdLine && *pui8Argc < CMDLINE_MAX_ARGS) {
         if (*pcCmdLine == '\0') {
             break;
@@ -279,6 +281,9 @@ void RemoveExtraSpace(uint8_t * string) {
 void string_get(char * string) {
     UARTgets(string, 51); // Reads up to 50 characters + null terminator from UART
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //
+
 // Test case results for this lab.
 struct TestCaseType {
     bool valid;
@@ -394,7 +399,8 @@ main(void) {
     UARTprintf("0 for default numbers, 1 for custom arguments\n");
     //The following while loop allow the user to parse the pre-defined commands or the command the user fed in. 
 
-    //Below is your playground TODO
+// --- SECTION COMPLETED BY STUDENT --- //
+
     if (default_0_custom_1 == 0) {
         for (i = 0; i < sizeof(pcCmdLineArray) / sizeof(pcCmdLineArray[0]); i++) {
             error_argument = 0;
@@ -427,3 +433,5 @@ main(void) {
     UARTprintf("End of the program\n");
     while (1) {}
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //

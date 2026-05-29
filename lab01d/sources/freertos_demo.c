@@ -234,6 +234,8 @@ int main(void) {
 	
 	//Expected project structure 
 	//main.c file: freeRTOS_demo.c
+
+// --- SECTION COMPLETED BY STUDENT --- //
 	
 	// Initialize the LCD first (needs to be ready before updates)
     LCD_Init();
@@ -272,6 +274,8 @@ int main(void) {
         }
     }  
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //
 
 // Subroutine to wait 10 msec
 // Inputs: None

@@ -227,6 +227,8 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
     }
 }
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
 // CUSTOM FUNCTIONS FOR THIS LAB
 
 void UART0IntHandler(void){
@@ -489,6 +491,8 @@ void Case3_UART0Int(void) {
     while (1); // infinite loop to keep program running. KD
 }
 
+// --- END SECTION COMPLETED BY STUDENT --- //
+
 //*****************************************************************************
 //
 // Configure the UART and its pins.  This must be called before UARTprintf().
@@ -546,6 +550,8 @@ int main(void)
     ConfigureUART();
 	UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
 	
+// --- SECTION COMPLETED BY STUDENT --- //
+
     // case selection KD
     char ch = '\0';
     UARTprintf("Case 1: Computation Time Measurement\n");
@@ -577,6 +583,7 @@ int main(void)
             break;
     }
 		
+// --- END SECTION COMPLETED BY STUDENT --- //
 	
 	UARTprintf("\n");
 	UARTprintf("End of the program\n");

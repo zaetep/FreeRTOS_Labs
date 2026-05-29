@@ -1,3 +1,5 @@
+// ENTIRE FILE COMPLETED BY STUDENT
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <inc/hw_timer.h>

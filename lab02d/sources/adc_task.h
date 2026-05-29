@@ -1,3 +1,5 @@
+// ENTIRE FILE COMPLETED BY STUDENT
+
 #ifndef ADC_TASK_H
 #define ADC_TASK_H
 

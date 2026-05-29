@@ -1,3 +1,5 @@
+// ENTIRE FILE COMPLETED BY STUDENT
+
 #ifndef __QUEUES_H__
 #define __QUEUES_H__
 

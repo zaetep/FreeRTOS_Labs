@@ -1,3 +1,5 @@
+// ENTIRE FILE COMPLETED BY STUDENT
+
 #ifndef __SWITCH_TASK_H__
 #define __SWITCH_TASK_H__
 

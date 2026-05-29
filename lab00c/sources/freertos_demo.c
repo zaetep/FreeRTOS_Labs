@@ -257,6 +257,8 @@ ConfigureUART(void) {
 }
 uint32_t g_ui32SysClock; 
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
 // @brief Find the total amount of points from 10 soceer matches.
 // @param [in] points[][] - an array of string with 10 match points, such as {"13:2","0:0","2:25",....}
 // @param [out] int8_t *winner
@@ -351,10 +353,9 @@ uint8_t matchPoints(char * points[], int8_t * pwinner, uint8_t size_of_points) {
     UARTprintf("TIE\n");
     return matchPoints0;
   }
-  
-
 }
 
+// --- END SECTION COMPLETED BY STUDENT --- //
 
 // An structure to define the data structure to store the game result.
 struct TestCaseType {
@@ -418,6 +419,8 @@ main(void)
     //
     ConfigureUART();
 	UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
+
+// --- SECTION COMPLETED BY STUDENT --- //
 
   char input_char = 0;
   UARTprintf("Enter 't' to compute a predefined case or 'c' to enter a custom input.\n");
@@ -484,7 +487,7 @@ main(void)
       
   }
 
-
+// --- END SECTION COMPLETED BY STUDENT --- //
 
 
 	UARTprintf("End of the program\n");

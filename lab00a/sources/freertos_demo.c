@@ -288,6 +288,8 @@ int main(void){
     ConfigureUART();
 	UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
 	
+    // --- SECTION COMPLETED BY STUDENT --- //
+
 	// Initialization the airline seat set structure TODO
     struct Seat seats[4][3];
     for (int i = 0; i < 4; i++) {
@@ -364,6 +366,9 @@ int main(void){
 	}
 	UARTprintf("\n");
 	UARTprintf("End of the program\n");
+
+    // --- END SECTION COMPLETED BY STUDENT --- //
+
 /*     while (1) {
       //XOR masking operation make the LED blinks 
       GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIOPinRead(GPIO_PORTF_BASE, GPIO_PIN_1) ^ GPIO_PIN_1);
@@ -390,6 +395,8 @@ void DelayWait10ms(uint32_t n) {
   }
 }
  
+// --- SECTION COMPLETED BY STUDENT --- //
+
 // Get the string via UART TODO
 void string_get(char * string) {
     int idx = 0;
@@ -664,3 +671,5 @@ void change_assignment(void) {
         old_row, old_col, new_row, new_col, fname, lname);
     return;
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //

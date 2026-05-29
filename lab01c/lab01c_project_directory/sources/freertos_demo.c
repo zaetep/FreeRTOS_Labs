@@ -225,6 +225,8 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName) {
 //void UART0IntHandler(void){
 //}
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
 void Timer0AIntHandler(void){
 	//Clear Timer0 interrupt 
 	TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
@@ -288,6 +290,8 @@ void Timer3A_Init(void) {
     // enable timer
     TimerEnable(TIMER3_BASE, TIMER_A);
 }
+
+// --- END SECTION COMPLETED BY STUDENT --- //
 
 //*****************************************************************************
 //
@@ -525,6 +529,8 @@ int main(void)
 	// Initialize the ST7735 display (choose the tab matching your module)
 	ST7735_InitR(INITR_REDTAB);
 
+// --- SECTION COMPLETED BY STUDENT --- //
+
 	// Optional: clear screen and show a status message
 	ST7735_FillScreen(ST7735_BLACK);
 	ST7735_SetCursor(0, 0);
@@ -552,6 +558,7 @@ int main(void)
 	//Draw the don!
 	ST7735_DrawBitmap(30, 100, output_24bit, 50, 50);
 	
+// --- END SECTION COMPLETED BY STUDENT --- //
 	
 	UARTprintf("\n");
 	UARTprintf("End of the program\n");

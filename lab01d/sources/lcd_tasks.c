@@ -1,3 +1,5 @@
+// ENTIRE FILE COMPLETED BY STUDENT
+
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
