@@ -1,0 +1,49 @@
+# Keil artifacts
+*.axf
+
+# Keil/uVision build outputs
+*.o
+*.obj
+*.d
+*.dep
+*.lst
+*.map
+*.hex
+*.bin
+*.elf
+*.srec
+*.uvguix.*
+*.uvgui.*
+*.uvoptx
+*.uvopt
+*.uvprojx
+*.uvproj*
+*.lnp
+*.axf
+
+# ARM/embedded debug and listing files
+*.crf
+*.tra
+*.i
+
+# CMake/Ninja build folders and cache
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+.ninja_deps
+.ninja_log
+
+# Generic temporary/editor files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# VS Code workspace settings
+.vscode/
+
+# Logs
+*.log
